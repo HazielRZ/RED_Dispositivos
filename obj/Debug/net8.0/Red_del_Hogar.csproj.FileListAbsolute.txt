@@ -12,3 +12,4 @@ C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\refint
 C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.pdb
 C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.genruntimeconfig.cache
 C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\ref\Red_del_Hogar.dll
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.sourcelink.json

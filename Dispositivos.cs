@@ -16,6 +16,28 @@ public class Dispositivos
         Encendido = false; // Inicialmenete apagado
 
     }
+    public virtual void Encender()
+    {
+        if (Conectado)
+        {
+            if (!Encendido)
+            {
+            
+                Encendido = true;
+                Console.WriteLine($"{Marca} {Modelo} se ha encendido.");
+            }
+            else
+            {
+                Console.WriteLine($"{Marca} {Modelo} ya está encendido.");
+            }
+        }
+        else
+        {
+            Console.WriteLine($"{Marca} {Modelo} no puede encenderse porque no está conectado.");
+        }
+    }
+
+    
 }
 
 

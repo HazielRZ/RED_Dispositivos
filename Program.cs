@@ -86,50 +86,63 @@ internal class Program
 
         private static void MoverDispositivo()
         {
-            // dispositivo a mover
-            Console.WriteLine("Seleccione el dispositivo a mover:");
-            for (int i = 0; i < _dispositivos.Count; i++)
+            int dispositivoSeleccionado = MostrarYSeleccionarDispositivos();
+            if (dispositivoSeleccionado != -1)
             {
-                Console.WriteLine($"{i + 1}. {_dispositivos[i].Marca} {_dispositivos[i].Modelo}");
+               //
             }
 
-            int dispositivoSeleccionado = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()) - 1;
-
-            // habitación destino
-            Console.WriteLine("Seleccione la habitación destino:");
-            for (int i = 0; i < _habitaciones.Count; i++)
-            {
-                Console.WriteLine($"{i + 1}. {_habitaciones[i].Nombre}");
-            }
-
-            int habitacionDestinoSeleccionado = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()) - 1;
            
 
-            // Remover el dispositivo de la habitación actual
-            var dispositivo = _dispositivos[dispositivoSeleccionado];
-            var habitacionActual = _habitaciones.Find(h => h.Dispositivos.Contains(dispositivo));
-            habitacionActual.Dispositivos.Remove(dispositivo);
+            
+            int habitacionDestino = MostrarYSeleccionarHabitaciones();
+            if (habitacionDestino != -1)
+            {
+                // mover el dispositivo a la habitación destino
+            }
+      
 
-            // Agregar el dispositivo a la nueva habitación
-            var habitacionDestino = _habitaciones[habitacionDestinoSeleccionado];
-            habitacionDestino.Dispositivos.Add(dispositivo);
-
-            Console.WriteLine($"El dispositivo {dispositivo.Marca} {dispositivo.Modelo} se ha movido a la habitación {habitacionDestino.Nombre}.");
+        
         }
+
 
         private static void EncenderApagarDispositivo()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Selecciona el dispositivo a encender/apagar:");
+            int dispositivoSeleccionado = MostrarYSeleccionarDispositivos();
+            if (dispositivoSeleccionado != -1)
+            {
+                int dispositivoIndex = int.Parse(Console.ReadLine());
+
+                _dispositivos[dispositivoIndex].Encendido = !_dispositivos[dispositivoIndex].Encendido;
+                Console.WriteLine("Estado del dispositivo cambiado.");
+            }
+
         }
 
         private static void MostrarDispositivosNull()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Dispositivos sin habitación:");
+            foreach (var dispositivo in _dispositivos)
+            {
+               //mostrar
+            }
         }
 
         private static void EncenderApagarLuzHabitacion()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Selecciona la habitación:");
+            int habitacionDestino = MostrarYSeleccionarHabitaciones();
+            if (habitacionDestino != -1)
+            {
+                //validar estado de luz y cambiarla
+                
+            }
+           
+
+           
+
+            
         }
 
         private static void AgregarHabitacion()
@@ -257,5 +270,47 @@ internal class Program
             }
 
             Menu();
+        }
+        private static int MostrarYSeleccionarDispositivos()
+        {
+            Console.WriteLine("Selecciona un dispositivo:");
+            for (int i = 0; i < _dispositivos.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {_dispositivos[i].Marca} {_dispositivos[i].Modelo}");
+            }
+
+            int dispositivoSeleccionado = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()) - 1;
+
+            // Validar la selección
+            if (dispositivoSeleccionado >= 0 && dispositivoSeleccionado < _dispositivos.Count)
+            {
+                return dispositivoSeleccionado;
+            }
+            else
+            {
+                Console.WriteLine("Dispositivo no válido.");
+                return -1; 
+            }
+        }
+        private static int MostrarYSeleccionarHabitaciones()
+        {
+            Console.WriteLine("Selecciona una habitación:");
+            for (int i = 0; i < _habitaciones.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {_habitaciones[i].Nombre}");
+            }
+
+            int habitacionSeleccionada = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()) - 1;
+
+            // Validar la selección
+            if (habitacionSeleccionada >= 0 && habitacionSeleccionada < _habitaciones.Count)
+            {
+                return habitacionSeleccionada;
+            }
+            else
+            {
+                Console.WriteLine("Habitación no válida.");
+                return -1; 
+            }
         }
     }
