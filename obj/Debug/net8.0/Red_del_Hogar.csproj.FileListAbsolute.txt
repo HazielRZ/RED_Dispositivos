@@ -1,0 +1,14 @@
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\bin\Debug\net8.0\Red_del_Hogar.exe
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\bin\Debug\net8.0\Red_del_Hogar.deps.json
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\bin\Debug\net8.0\Red_del_Hogar.runtimeconfig.json
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\bin\Debug\net8.0\Red_del_Hogar.dll
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\bin\Debug\net8.0\Red_del_Hogar.pdb
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.AssemblyInfoInputs.cache
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.AssemblyInfo.cs
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.csproj.CoreCompileInputs.cache
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.dll
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\refint\Red_del_Hogar.dll
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.pdb
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\Red_del_Hogar.genruntimeconfig.cache
+C:\Users\Hazie\RiderProjects\Red_del_Hogar\Red_del_Hogar\obj\Debug\net8.0\ref\Red_del_Hogar.dll

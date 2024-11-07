@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Red_del_Hogar/1.0.0": {
+        "runtime": {
+          "Red_del_Hogar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Red_del_Hogar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
