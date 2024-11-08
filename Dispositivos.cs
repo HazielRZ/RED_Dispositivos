@@ -7,6 +7,7 @@ public class Dispositivos
     public string Modelo { get; set; }
     public bool Conectado { get; set; } // Nuevo atributo
     public bool Encendido { get; set; }
+    public int Habitacion { get; set; }
 
     public Dispositivos(string marca, string modelo)
     {
@@ -14,8 +15,12 @@ public class Dispositivos
         Modelo = modelo;
         Conectado = false; // Inicialmente desconectado
         Encendido = false; // Inicialmenete apagado
+        
 
     }
+
+ 
+    
     public virtual void Encender()
     {
         if (Conectado)
